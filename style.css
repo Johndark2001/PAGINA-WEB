@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --- Estilos Globales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+/* --- Estilos Generales para Menús y Encabezados --- */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.menu .navbar ul li {
+    display: inline-block;
+}
+
+.menu .navbar ul li a {
+    font-size: 17px;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(209, 128, 128);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    cursor: pointer;
+}
+
+.menu label {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu label {
+        display: block;
+    }
+
+    .menu .navbar {
+        display: none;
+        flex-direction: column;
+    }
+
+    #menu:checked ~ .menu .navbar {
+        display: flex;
+    }
+}
+
+/* --- Página Principal: TENDENCIASHOE --- */
+
+body.TENDENCIASHOE {
+    background-color: #c5c3c3;
+}
+
+.header {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.zapatos-content {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.zapatos-content h2, .zapatos-content h3 {
+    font-size: 36px;
+    color: #2c2b2b;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.zapatos-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.zapatos-item {
+    width: calc(33.33% - 40px);
+    max-width: 500px;
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zapatos-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-zapatos {
+    padding: 10px 20px;
+    background: rosybrown;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 50%;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.btn-zapatos:hover {
+    background: #ff7f7f;
+}
+
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-content .link h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-content .link ul li a {
+    color: #fff;
+}
+
+.footer-content .link ul li a:hover {
+    color: rosybrown;
+}
+
+
+
+
+/* Página de Zapatos Formales hombre */
+
+body.Zapatosformaleshombre {
+    background-color: rgb(167, 167, 167);
+}
+
+.logo1 {
+    color: #000000;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.menu .navbar1 ul li {
+    display: inline-block;
+}
+
+.menu .navbar1 ul li a {
+    font-size: 17px;
+    color: #000000;
+    padding: 10px 20px;
+}
+
+.menu .navbar1 ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.formales-page {
+    background: #3a8eb5; 
+    padding: 20px;
+    text-align: center;
+}
+
+.zapatos-formales h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.zapatos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.zapato {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.zapato img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.zapato p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #0a0a0a;
+    font-weight: bold;
+}
+
+
+/* Página de Zapatos Casuales hombre */
+
+
+body.Zapatoscasualeshombre {
+    background-color: rgb(167, 167, 167);
+}
+
+.logo1 {
+    color: #000000;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.menu .navbar1 ul li {
+    display: inline-block;
+}
+
+.menu .navbar1 ul li a {
+    font-size: 17px;
+    color: #000000;
+    padding: 10px 20px;
+}
+
+.menu .navbar1 ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.formales-page {
+    background: #3a8eb5; 
+    padding: 20px;
+    text-align: center;
+}
+
+.zapatos-formales h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.zapatos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.zapato {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.zapato img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.zapato p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #0a0a0a;
+    font-weight: bold;
+}
+
+
+
+
+
+
